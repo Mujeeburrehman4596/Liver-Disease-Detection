@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver Disease Detection</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Liver Disease Detection Form</h2>
+
+    <div class="card mt-4">
+      <div class="card-header bg-primary text-white">
+        Input Your Details
+      </div>
+      <div class="card-body">
+        <form id="liver-form">
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select class="form-control" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bilirubin">Bilirubin Level (mg/dL):</label>
+            <input type="number" class="form-control" id="bilirubin" placeholder="Enter Bilirubin Level" required>
+          </div>
+
+          <div class="form-group">
+            <label for="alkphos">Alkaline Phosphatase (U/L):</label>
+            <input type="number" class="form-control" id="alkphos" placeholder="Enter Alkaline Phosphatase Level" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sgpt">SGPT (U/L):</label>
+            <input type="number" class="form-control" id="sgpt" placeholder="Enter SGPT Level" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sgot">SGOT (U/L):</label>
+            <input type="number" class="form-control" id="sgot" placeholder="Enter SGOT Level" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Check for Liver Disease</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header bg-success text-white">
+        Detection Result
+      </div>
+      <div class="card-body">
+        <h5 id="result-message" class="text-center">Enter your data to get the result</h5>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
